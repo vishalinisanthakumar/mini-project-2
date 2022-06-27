@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float principalAmt, rateOfInterest, TimePeriod, compoundInterest;
+    printf("Please enter the Principal Amount : = ");
+    scanf("%f", &principalAmt);
+    printf("Please Enter Rate Of Interest : = ");
+    scanf("%f", &rateOfInterest);
+    printf("Please Enter the Time Period in Years : = ");
+    scanf("%f", &TimePeriod);
+    compoundInterest = principalAmt * (pow(( 1 + rateOfInterest/100), TimePeriod));
+    compoundInterest = compoundInterest - principalAmt;
+    printf("Simple Interest for Principal Amount %.2f is = %.2f\n", principalAmt, compoundInterest);
+    return 0;}
